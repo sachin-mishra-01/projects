@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+
+            box-shadow: 0px 0px 10px 5px  red;
+           animation-name: s;
+           animation-duration: 5s;
+           animation-timing-function: ease;
+           animation-iteration-count: infinite;
+           animation-direction: normal;
+        }
+
+        .b3{
+            box-shadow: 0px 0px 10px 5px blue;
+           animation-name: u;
+           animation-duration: 5s;
+           animation-timing-function: ease;
+           animation-iteration-count: infinite;
+           animation-direction: normal;
+        }
+        
+        @keyframes s {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(100px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        @keyframes u {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(-100px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        .bo{
+            border: 2px solid white;
+            border-radius: 10%;
+            background-color: rgb(74, 72, 72);
+           color: azure;
+        }
+         
+        .bo:hover{
+            transition: 0.5s;
+            cursor: pointer;
+           color: black;
+           background-color: azure;
+          
+        }
+        .bo:hover p{
+            transition: 0.5s;
+            cursor: pointer;
+           color: black;
+           
+          
+        }
+      a:hover{
+        transition: 1s;
+        transform: scale(1.2);
+        
+      }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="o" style="background-color: black;  width: 100vw; height: 100vh; position: fixed; display: flex; z-index: -10; " >
+       
+        <div class="b1" style="background-color: red; width: 12%; height: 20%; border-radius: 100%;position: absolute;  margin-left: 20%; margin-top: 5%; z-index: -6; "> </div>
+
+          <div class="bhide"  style="width: 35%; height: 35%; border: 2px solid white;  position:absolute;  margin-left: 31%; margin-top: 15%; display: flex;  flex-direction: column;  border-radius: 5%; z-index: 1; scale: 0;">
+             <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+                <h2 style="margin-left: 3%; color: beige; ">Share My Profile</h2>
+                <h1 style="margin-right: 3%; color: beige; cursor: pointer;">*</h1>
+                
+             </div>
+             <div>
+                <hr>
+                <h4 style="color: white; margin-left: 5%;">share this via</h4>
+
+                <div style="display: flex; justify-content: space-around; margin-top: 10%;">
+                   <a href="pfs.html"> <img style="border: 2px solid white; border-radius: 100%;" width="50px" height="50px" src="icons8-python-94.png" alt=""></a>
+                   <a href="besic.html">  <img style="border: 2px solid white; border-radius: 100%;" width="50px" height="50px" src="html.png" alt=""></a>
+                   <a href="tictoe.html"> <img style="border: 2px solid white; border-radius: 100%;" width="50px" height="50px" src="fest.jpg" alt=""></a>
+                    <a href="incdecbutton.html"><img style="border: 2px solid white; border-radius: 100%;" width="50px" height="50px" src="github.png" alt=""></a>
+                </div>
+             </div>
+
+
+             <div style="width: 100%; height: 100%; background-color: black; opacity: 0.7; position: absolute; z-index: -6; border-radius: 5%;">
+
+             </div>
+          </div>
+
+
+
+
+        <div  class="b2" style="width: 25%; height: 60%; border: 2px solid white;  position:absolute;  margin-left: 37%; margin-top: 10%; display: flex;  flex-direction: column;  border-radius: 10%; z-index: -6;">
+             <div style="display: flex; width: 100%; height: 40%; justify-content: center; position:absolute;   margin-top: 6%; ">
+                <img style="width: 50%; height: 90%; border-radius: 100%; margin-top: 2%;" src="Picsart_23-06-21_00-24-41-855[13].jpg" alt="">
+
+             </div>
+             <div style="display: flex; justify-content: center; align-items: center;position: absolute;  margin-top: 55% ;  width: 100%; ">
+                <h2 style="color: azure;">Sachin Mishra</h2>
+             </div>
+
+             <div style="display: flex; justify-content: center; align-items: center; position: absolute;  margin-top: 75%;  width: 100%; ">
+                <h5 style="color: azure;">Student , Code Help</h5>
+             </div>
+             
+              
+             <div  style="  width: 100%; margin-top: 95%;  position: absolute; display: flex;  justify-content: space-evenly;">
+
+                <button  class="bo"  onclick="showw()" >
+                   <p>Share My Profile </p>
+
+                </button>
+
+                <button  class="bo"  >
+                    <a style="color: white; text-decoration: none;" href="www.facebook.com"><p>Follow Me</p></a>
+                    
+                 </button>
+
+             </div>
+
+
+             <div   style="background-color: rgb(114, 111, 111); opacity: 0.3; width: 100%; height: 100%; position: absolute; z-index: -1; border-radius: 10%;"></div>
+
+
+             </div>
+        <div class="b3" style="background-color: blue; width: 17%; height: 30%; border-radius: 100%; position: absolute; margin-left: 65%; margin-top: 30%; position: absolute; z-index: -7;"> </div>
+    </div>
+
+    <script src="pfs.js"></script>
+</body>
+</html>
